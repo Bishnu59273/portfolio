@@ -1,0 +1,31 @@
+/* Extra small devices (phones) */
+@media screen and (max-width: 438px) {
+}
+
+/* Small devices (larger phones, portrait tablets) */
+@media screen and (max-width: 576px) {
+  /* Larger phones and small tablets */
+}
+
+/* Medium devices (landscape tablets) */
+@media screen and (max-width: 768px) {
+  /* Tablets and small laptops */
+  .cards > * {
+    width: 30%; /* 3 per row */
+  }
+}
+
+/* Large devices (laptops and desktops) */
+@media screen and (max-width: 992px) {
+  /* Standard laptops and desktops */
+}
+
+/* Extra large devices (large desktops) */
+@media screen and (max-width: 1200px) {
+  /* Larger desktops and high-resolution screens */
+}
+
+/* Ultra large screens (4K and above) */
+@media screen and (max-width: 1400px) {
+  /* Large monitors and high-res screens */
+}
