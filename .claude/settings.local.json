@@ -5,7 +5,12 @@
       "WebFetch(domain:reactbits.dev)",
       "WebFetch(domain:raw.githubusercontent.com)",
       "Bash(npm install:*)",
-      "Bash(npx shadcn@latest init --defaults -y)"
+      "Bash(npx shadcn@latest init --defaults -y)",
+      "Bash(rm -f src/index.js src/AddBootstrap.js src/App.css src/reportWebVitals.js src/setupTests.js)",
+      "Bash(rm -rf src/plugins)",
+      "Bash(npx vite:*)",
+      "Bash(mv App.js App.jsx)",
+      "Bash(mv Route.js Route.jsx)"
     ]
   }
 }

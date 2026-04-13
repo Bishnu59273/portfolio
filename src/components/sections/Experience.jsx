@@ -1,10 +1,11 @@
 import { motion } from "motion/react";
 import { Briefcase, GraduationCap } from "lucide-react";
+import BlurText from "@/components/reactbits/BlurText";
 
 const experiences = [
   {
     icon: Briefcase,
-    role: "Technical Trainee",
+    role: "Associate Software Developer",
     company: "Authnull",
     period: "Current",
     badge: "Full-Time",
@@ -41,7 +42,7 @@ const fadeUp = {
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-20 md:py-28 bg-white/[0.01]">
+    <section id="experience" className="py-20 md:py-28 bg-slate-100/60 dark:bg-white/[0.01]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial="hidden"
@@ -54,16 +55,18 @@ export default function Experience() {
         >
           <motion.p
             variants={fadeUp}
-            className="text-indigo-400 text-sm font-medium tracking-widest uppercase mb-2 text-center"
+            className="text-indigo-500 dark:text-indigo-400 text-sm font-medium tracking-widest uppercase mb-2 text-center"
           >
             Career
           </motion.p>
-          <motion.h2
-            variants={fadeUp}
-            className="text-3xl sm:text-4xl font-bold text-white text-center mb-12"
-          >
-            Experience
-          </motion.h2>
+          <BlurText
+            text="Experience"
+            delay={80}
+            direction="bottom"
+            animateBy="words"
+            stepDuration={0.38}
+            className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white justify-center mb-12"
+          />
 
           <div className="max-w-3xl mx-auto space-y-5">
             {experiences.map((exp, i) => {
@@ -74,39 +77,42 @@ export default function Experience() {
                   variants={fadeUp}
                   whileHover={{ scale: 1.01 }}
                   transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                  className="rounded-xl border border-white/5 bg-white/[0.02] p-7 hover:border-indigo-500/20 hover:bg-white/[0.03] transition-colors duration-300"
+                  className="rounded-xl border border-slate-200 dark:border-white/5 bg-white dark:bg-white/[0.02] p-7 hover:border-indigo-300 dark:hover:border-indigo-500/20 hover:shadow-md dark:hover:shadow-none transition-all duration-300"
                 >
                   {/* Header */}
                   <div className="flex items-start gap-4 mb-4">
-                    <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-indigo-500/10 flex items-center justify-center">
-                      <Icon size={18} className="text-indigo-400" />
+                    <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-indigo-50 dark:bg-indigo-500/10 flex items-center justify-center">
+                      <Icon size={18} className="text-indigo-500 dark:text-indigo-400" />
                     </div>
                     <div className="flex-1 min-w-0">
                       <div className="flex flex-wrap items-center gap-2 mb-1">
-                        <h3 className="text-white font-semibold text-lg leading-tight">
+                        <h3 className="text-slate-900 dark:text-white font-semibold text-lg leading-tight">
                           {exp.role}
                         </h3>
-                        <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
+                        <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-indigo-50 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 border border-indigo-200 dark:border-indigo-500/20">
                           {exp.badge}
                         </span>
                       </div>
                       <div className="flex flex-wrap items-center gap-3 text-sm">
-                        <span className="text-slate-300">{exp.company}</span>
-                        <span className="text-slate-600">·</span>
-                        <span className="text-slate-500">{exp.period}</span>
+                        <span className="text-slate-700 dark:text-slate-300">{exp.company}</span>
+                        <span className="text-slate-300 dark:text-slate-600">·</span>
+                        <span className="text-slate-400 dark:text-slate-500">{exp.period}</span>
                       </div>
                     </div>
                   </div>
 
                   {/* Description */}
-                  <p className="text-slate-400 leading-relaxed mb-4 text-sm">
+                  <p className="text-slate-500 dark:text-slate-400 leading-relaxed mb-4 text-sm">
                     {exp.description}
                   </p>
 
                   {/* Highlights */}
                   <ul className="space-y-1.5">
                     {exp.highlights.map((h, j) => (
-                      <li key={j} className="flex items-start gap-2 text-sm text-slate-500">
+                      <li
+                        key={j}
+                        className="flex items-start gap-2 text-sm text-slate-400 dark:text-slate-500"
+                      >
                         <span className="mt-1.5 w-1 h-1 rounded-full bg-indigo-400 flex-shrink-0" />
                         {h}
                       </li>

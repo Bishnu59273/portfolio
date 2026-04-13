@@ -9,7 +9,7 @@ import Contact from "@/components/sections/Contact";
 
 export const Home = () => {
   return (
-    <div className="min-h-screen bg-[#0a0a0f]">
+    <div className="min-h-screen bg-slate-50 dark:bg-[#0a0a0f]">
       <Navbar />
       <main>
         <Hero />
