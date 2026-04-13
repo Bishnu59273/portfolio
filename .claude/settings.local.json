@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:animate-ui.com)",
+      "WebFetch(domain:reactbits.dev)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(npm install:*)",
+      "Bash(npx shadcn@latest init --defaults -y)"
+    ]
+  }
+}
