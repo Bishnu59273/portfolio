@@ -8,7 +8,13 @@ const skillCategories = [
   },
   {
     title: "Backend",
-    items: ["Node.js", "Express.js", "RESTful APIs", "PHP", "Database Management"],
+    items: [
+      "Node.js",
+      "Express.js",
+      "RESTful APIs",
+      "Python",
+      "Database Management",
+    ],
   },
   {
     title: "Tools",
@@ -16,7 +22,12 @@ const skillCategories = [
   },
   {
     title: "Expertise",
-    items: ["Problem Solving", "Scalable Architecture", "Clean Code", "Collaboration"],
+    items: [
+      "Problem Solving",
+      "Scalable Architecture",
+      "Clean Code",
+      "Collaboration",
+    ],
   },
 ];
 
@@ -27,7 +38,10 @@ const fadeUp = {
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-20 md:py-28 bg-slate-100/60 dark:bg-white/[0.01]">
+    <section
+      id="skills"
+      className="py-20 md:py-28 bg-slate-100/60 dark:bg-white/[0.01]"
+    >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial="hidden"

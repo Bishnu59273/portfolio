@@ -8,7 +8,10 @@ const fadeUp = {
 
 export default function About() {
   return (
-    <section id="about" className="py-20 md:py-28 bg-white dark:bg-white/[0.01]">
+    <section
+      id="about"
+      className="py-20 md:py-28 bg-white dark:bg-white/[0.01]"
+    >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial="hidden"
@@ -40,8 +43,10 @@ export default function About() {
           >
             <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
               I&apos;m{" "}
-              <span className="text-slate-900 dark:text-white font-semibold">Bishnu Saha</span> — a
-              passionate web developer with a{" "}
+              <span className="text-slate-900 dark:text-white font-semibold">
+                Bishnu Saha
+              </span>{" "}
+              — a passionate software developer with a{" "}
               <span className="bg-gradient-to-r from-indigo-500 to-violet-500 bg-clip-text text-transparent font-semibold">
                 Master&apos;s degree in Computer Applications (MCA)
               </span>{" "}
