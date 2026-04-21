@@ -86,7 +86,7 @@ const companies = [
     location: "California, United States · Remote",
     roles: [
       {
-        role: "Associate Software Developer",
+        role: "Associate Software Engineer",
         start: "Mar 2026",
         // end: "Jun 2026",  ← uncomment + set date to freeze this role
         highlights: [
